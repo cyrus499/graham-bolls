@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>
+     GRAHAM BO'LLS
+  </title>
+  <link rel="stylesheet" type="text/css" href="design4.css">
+
+</head>
+
+<body>
+  <section class="header">
+  <nav>   
+    <a href="index.html">😋GRAHAM BO'LLS
+</a>
+    <div class="tab-bar">
+      <ul>
+      
+         <li><a href="promos.html">PROMOS</a></li>
+      <li><a href="product.html">PRODUCTS</a></li>
+      <li><a href="order.html">ORDER</a></li>
+      <li><a href="contacts.html">CONTACTS</a></li>
+
+</ul>  
+  </div>
+</nav>
+
+<div class="orderwhole">
+            <div class="orderbox">
+                <h2>Place Your Order</h2>
+                <p>Fill out the form below and we'll contact you for delivery!</p>
+
+               
+                    
+                    <div class="group">
+                        <label>Full Name</label>
+                        <input type="text" name="name" placeholder="Sweet Cheeks" required>
+                    </div>
+
+                    <div class="group">
+                        <label>Contact Number</label>
+                        <input type="tel" name="phone" placeholder="0922-222-2222" required>
+                    </div>
+
+                    <div class="group">
+                        <label>Select Your Bo'lls</label>
+                        <select name="product" required>
+                            <option value="" disabled selected>Choose a flavor...</option>
+                            <option value="Choco">Choco ( 8 pieces = 75 PHP)</option>
+                            <option value="Mango Graham">Mango Graham ( 8 pcs = 75 PHP)</option>
+                            <option value="Classic">Classic (12 pcs = 80 PHP)</option>
+                            
+                        </select>
+                    </div>
+
+                    <div class="group">
+                        <label>Quantity (How many orders?)</label>
+                        <input type="number" name="quantity" min="1" value="1" required>
+                    </div>
+
+                    <div class="group">
+                        <label>Delivery Address</label>
+                        <textarea name="address" rows="3" placeholder="Street, Barangay, City" required></textarea>
+                    </div>
+
+                    <div class="order-container">
+    <div id="form-wrapper">
+        <h2>Place Your Order</h2>
+        <form id="orderForm">
+            <button type="submit" class="submit">SEND ORDER</button>
+        </form>
+    </div>
+
+    <div id="success-message" style="display: none;">
+        <h2 style="font-size: 30px;">✅</h2>
+        <h2>THANK YOU!</h2>
+        <p>We'll contact you shortly!</p>
+    </div>
+</div>
+                </form>
+            </div>
+        </div>
+
+
+
+<script>
+    document.getElementById('orderForm').addEventListener('submit', function(event) {
+        event.preventDefault(); 
+        document.getElementById('form-wrapper').style.display = 'none';
+        document.getElementById('success-message').style.display = 'block';
+    });
+</script>
+
+
+</section>
+
+
+
+
+
+
+
+</body>
+
+</html>

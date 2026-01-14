@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Mansalva&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Burned&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tagesschrift&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(graham.jpg);
+   background-position: center;
+   background-size: cover;
+   
+}
+
+nav {
+    display: flex;
+    padding: 2% 5%;
+    justify-content: space-between;
+    align-items: center;
+  background: #A9591B;
+  border-radius: 0 0 40% 40%;
+ font-family: "Rubik Burned";
+  
+}
+
+
+.tab-bar {
+   text-decoration: none;
+   color: #fff;
+   font-size: 30px;
+   
+}
+
+a{
+   text-decoration: none;
+   color: white;
+   font-size: 40px;
+
+}
+
+.tab-bar ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+.tab-bar ul li a {
+    text-decoration: none;
+    color: white;      
+    font-size: 30px;
+    font-family: "Mansalva", cursive; 
+    transition: color 0.3s;
+}
+
+.tab-bar ul li a:hover {
+    color: #000000; 
+}
+
+
+.deals {
+    
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+
+
+.table {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    max-width: 1000px;
+    justify-content: center;
+}
+
+.product {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    transition: 0.3s;
+    margin-top: 20px;
+}
+
+.product:hover {
+    transform: translateY(-40px);
+   
+    background: rgba(169, 89, 27, 0.4);
+
+}
+
+
+.product img {
+    width: 250px; 
+    height: 250px;
+    object-fit: cover;
+    border-radius: 100%; 
+    border: 3px solid #ffffff; 
+}
+
+.product header {
+    font-family: "Tagesschrift", serif;
+    font-size: 50px;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.product p {
+    font-family: "Mansalva", serif;
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        padding: 15px;
+        gap: 15px;
+    }
+    
+    a {
+        font-size: 24px;
+    }
+    
+    .tab-bar ul {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+    
+    .tab-bar ul li a {
+        font-size: 18px;
+        display: block;
+        padding: 10px;
+    }
+    
+    .table {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .product {
+        width: 100%;
+    }
+    
+    .product img {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .product header {
+        font-size: 28px;
+    }
+    
+    .product p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        padding: 10px;
+    }
+    
+    a {
+        font-size: 18px;
+    }
+    
+    .tab-bar ul li a {
+        font-size: 14px;
+    }
+    
+    .product img {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .product header {
+        font-size: 20px;
+    }
+    
+    .product p {
+        font-size: 14px;
+    }
+}

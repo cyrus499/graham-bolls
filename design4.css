@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Mansalva&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Burned&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tagesschrift&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(graham.jpg);
+   background-position: center;
+   background-size: cover;
+   
+}
+
+nav {
+    display: flex;
+    padding: 2% 5%;
+    justify-content: space-between;
+    align-items: center;
+  background: #A9591B;
+  border-radius: 0 0 40% 40%;
+ font-family: "Rubik Burned";
+  
+}
+
+
+.tab-bar {
+   text-decoration: none;
+   color: #fff;
+   font-size: 30px;
+   
+}
+
+a{
+   text-decoration: none;
+   color: white;
+   font-size: 40px;
+
+}
+
+.tab-bar ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+.tab-bar ul li a {
+    text-decoration: none;
+    color: white;      
+    font-size: 30px;
+    font-family: "Mansalva", cursive; 
+    transition: color 0.3s;
+}
+
+.tab-bar ul li a:hover {
+    color: #000000; 
+}
+
+.text {
+    text-align: center;
+    font-family: "Tagesschrift" ,serif ;
+    color: #ffffff;
+    font-size: 50px;
+    margin-top: 100px;
+    font-weight: bold;
+    
+   
+}
+
+.orderwhole {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+
+.orderbox {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 40px;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 500px;
+    color: white;
+    text-align: center;
+}
+
+.orderbox h2 {
+    font-family: "Tagesschrift", serif;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.orderbox p {
+    font-family: "Mansalva", cursive;
+    margin-bottom: 25px;
+}
+
+
+.group {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.group label {
+    display: block;
+    font-family: "Mansalva", cursive;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.group input, 
+.group select, 
+.group textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    background: rgba(255, 255, 255, 0.9);
+    font-family: "Mansalva", sans-serif;
+    font-size: 16px;
+}
+
+
+.submit {
+    width: 100%;
+    padding: 15px;
+    margin-top: 10px;
+    background-color: #A9591B;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-family: "Mansalva", serif;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.submit:hover {
+    background-color: green;
+    color: white;
+    transform: scale(0.90);
+}
+
+#success-message {
+    text-align: center;
+    padding: 5px ;
+    animation: fadeIn 0.5s ease; 
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        padding: 15px;
+        gap: 15px;
+    }
+    
+    a {
+        font-size: 24px;
+    }
+    
+    .tab-bar ul {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+    
+    .tab-bar ul li a {
+        font-size: 18px;
+        display: block;
+        padding: 10px;
+    }
+    
+    .text {
+        font-size: 28px;
+        margin-top: 30px;
+        padding: 20px;
+    }
+    
+    .orderbox {
+        padding: 25px;
+        width: 90%;
+    }
+    
+    .orderbox h2 {
+        font-size: 24px;
+    }
+    
+    .group input, 
+    .group select, 
+    .group textarea {
+        font-size: 14px;
+        padding: 10px;
+    }
+    
+    .submit {
+        font-size: 16px;
+        padding: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        padding: 10px;
+    }
+    
+    a {
+        font-size: 18px;
+    }
+    
+    .tab-bar ul li a {
+        font-size: 14px;
+    }
+    
+    .text {
+        font-size: 20px;
+        margin-top: 20px;
+    }
+    
+    .orderbox {
+        padding: 20px;
+        max-width: 95%;
+    }
+    
+    .orderbox h2 {
+        font-size: 20px;
+    }
+    
+    .group label {
+        font-size: 12px;
+    }
+    
+    .group input, 
+    .group select, 
+    .group textarea {
+        font-size: 13px;
+        padding: 8px;
+    }
+    
+    .submit {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
